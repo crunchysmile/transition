@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Run function slow</title>
+	<style type="text/css">
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			transition: 3s ease-in;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>This is aheading</h1>
+	<div class="box" id="box">This will Dissappear</div>
+	<br><br>
+	<button id="btn">Click to see changes</button>
+
+	<script>
+		var box = document.getElementById("box");
+		var btn = document.getElementById("btn");
+		console.log(box);
+		console.log(btn);
+		btn.addEventListener("click", function () {
+			function ch1() {
+				box.style.backgroundColor = "yellow" ;
+			}
+			ch1();
+		})
+	
+	</script>
+</body>
+
+</html>
